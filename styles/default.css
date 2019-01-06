@@ -1,15 +1,33 @@
-body {
-    background-color: lightblue;
-    padding: 40px;
-    margin-left:100px;
-    margin-right:100px;
+*{
+  padding: 0;
+  margin: 0;
 }
 
-bor {
-    margin-left: 80px;
-    padding:40px;
+
+
+head , h1{
+  text-align: center;
+  color: white;
+  background: black;
+  padding: 20px 20px;
+  margin: 0;
+  margin-bottom: 10px;
 }
 
-pi {
-    padding: 10px;
+body{
+  background-color: #d64161;
+}
+
+.thumbnail{
+  text-align: center;
+}
+
+thumbnail , img {
+  border: solid black 5px;
+  border-radius: 5%;
+  margin: 0 5px;
+}
+
+.navigation {
+  border: solid, white, 5px;
 }
