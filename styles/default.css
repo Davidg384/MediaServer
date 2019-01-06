@@ -1,33 +1,88 @@
-*{
-  padding: 0;
-  margin: 0;
-}
+*{padding: 0; margin: 0;}
 
-
-
-head , h1{
-  text-align: center;
-  color: white;
-  background: black;
-  padding: 20px 20px;
-  margin: 0;
+header{
+  background-color: #4f0d0d;
+  border: solid black 3px;
   margin-bottom: 10px;
+  position: fixed;
+  width: 100%
 }
 
-body{
-  background-color: #d64161;
+header::after{
+  content: "";
+  display: table;
+  clear: both;
 }
 
-.thumbnail{
-  text-align: center;
+.name{
+  float: left;
+  padding-left: 3%;
+  font-size: 3em;
+  color: #ccc3c3;
+  text-shadow:
+  -2px -2px 0 #000,
+  2px -2px 0 #000,
+  -2px 2px 0 #000,
+  2px 2px 0 #000
 }
 
-thumbnail , img {
+
+nav {
+  float: right;
+  padding-right: 35%;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 70px;
+  padding-top: 23px;
+  position: relative;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+nav a:hover {color: red;}
+
+nav a::before {
+  content: '';
+  display: block;
+  height: 5px;
+  background-color: red;
+  position: absolute;
+  top: 0;
+  width: 0%;
+  transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {width: 100%;}
+
+
+body{background-color: #7c1c0d;}
+
+.thumbnail{text-align: center;}
+
+thumbnail, img {
   border: solid black 5px;
   border-radius: 5%;
-  margin: 0 5px;
+  margin: 5px 5px;
 }
 
-.navigation {
-  border: solid, white, 5px;
+h1, animelang{
+  margin: 0 0;
+  color: white;
+  background: blue;
+  width: 100%;
+  border: solid black;
+  text-align: center;
 }
